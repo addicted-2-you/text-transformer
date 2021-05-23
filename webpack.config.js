@@ -13,6 +13,7 @@ module.exports = {
       assets: path.resolve(__dirname, './src/assets'),
       components: path.resolve(__dirname, './src/components'),
       constants: path.resolve(__dirname, './src/constants'),
+      dictionaries: path.resolve(__dirname, './src/dictionaries'),
       models: path.resolve(__dirname, './src/models'),
       store: path.resolve(__dirname, './src/store'),
       utils: path.resolve(__dirname, './src/utils'),

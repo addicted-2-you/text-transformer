@@ -6,7 +6,7 @@ function OutputArea() {
 
   return (
     <div className="output-area">
-      <p className="output-text">{outputText}</p>
+      <pre className="output-text">{outputText}</pre>
     </div>
   );
 }

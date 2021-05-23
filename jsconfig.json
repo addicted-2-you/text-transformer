@@ -8,6 +8,7 @@
       "assets/*": ["./src/assets/*"],
       "components/*": ["./src/components/*"],
       "constants/*": ["./src/constants/*"],
+      "dictionaries/*": ["./src/dictionaries/*"],
       "models/*": ["./src/models/*"],
       "store": ["./src/store/index.ts"],
       "store/*": ["./src/store/*"],
