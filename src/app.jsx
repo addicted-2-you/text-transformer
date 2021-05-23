@@ -1,9 +1,15 @@
 import React from 'react';
 
+import ControlsPanel from './widgets/controls-panel';
+import InputArea from './widgets/input-area';
+import OutputArea from './widgets/output-area';
+
 function App() {
   return (
-    <div>
-      <h1>Text Transformerrrr</h1>
+    <div className="app">
+      <ControlsPanel />
+      <InputArea />
+      <OutputArea />
     </div>
   );
 }
