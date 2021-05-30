@@ -1,6 +1,12 @@
 .output-area {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   grid-area: output-area;
+
+  &__copy-button {
+    position: absolute;
+    margin-top: 14.5rem;
+  }
 }

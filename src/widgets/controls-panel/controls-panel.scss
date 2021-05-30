@@ -1,6 +1,11 @@
+$fade-purple: #444cf750;
+
 .controls-panel {
+  padding: 1rem 1.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   grid-area: controls-panel;
+  background-color: #ffffff;
+  border-bottom: 1px solid $fade-purple;
 }
