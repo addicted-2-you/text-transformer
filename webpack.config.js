@@ -23,7 +23,7 @@ module.exports = {
     path: path.join(__dirname, './dist'),
     filename: '[name].bundle.js',
     assetModuleFilename: 'images/[hash][ext][query]',
-    publicPath: '/',
+    publicPath: './',
   },
   module: {
     rules: [
