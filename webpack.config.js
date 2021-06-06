@@ -7,24 +7,24 @@ module.exports = {
   entry: ['./src/index.jsx'],
   target: 'web',
   devtool: 'source-map',
+
   resolve: {
-    extensions: ['.js', '.ts', '.jsx'],
+    extensions: ['.js', '.jsx'],
     alias: {
-      assets: path.resolve(__dirname, './src/assets'),
       components: path.resolve(__dirname, './src/components'),
       constants: path.resolve(__dirname, './src/constants'),
       dictionaries: path.resolve(__dirname, './src/dictionaries'),
-      models: path.resolve(__dirname, './src/models'),
       store: path.resolve(__dirname, './src/store'),
       utils: path.resolve(__dirname, './src/utils'),
     },
   },
+
   output: {
     path: path.join(__dirname, './dist'),
     filename: '[name].bundle.js',
     assetModuleFilename: 'images/[hash][ext][query]',
-    publicPath: './',
   },
+
   module: {
     rules: [
       {
@@ -36,12 +36,14 @@ module.exports = {
       { test: /\.(png|svg|jpg|jpeg|gif)$/i, type: 'asset/resource' },
     ],
   },
+
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './src/index.html'),
     }),
     new MiniCssExtractPlugin({ filename: 'index.css' }),
   ],
+
   devServer: {
     port: 3000,
   },
