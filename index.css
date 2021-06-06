@@ -1,4 +1,4 @@
-.controls-panel{padding:1rem 1.2rem;width:15vw;display:flex;justify-content:start;background-color:#efefef70;border-bottom:1px solid rgba(68,76,247,0.313725);border-left:1px solid #000000}
+.controls-panel{padding:1rem 1.2rem;width:15vw;display:flex;flex-direction:column;background-color:#efefef70;border-bottom:1px solid rgba(68,76,247,0.313725);border-left:1px solid #000000}.controls-panel .controls-group{padding:0.25rem;margin-top:1.5rem;border:1px solid #e0e0e0;border-radius:2px}.controls-panel .controls-group .zalgo-modes-group label{display:block}
 
 .input-area{width:45%;display:flex;justify-content:center;align-items:center}
 
