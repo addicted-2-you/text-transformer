@@ -1,9 +1,9 @@
 .output-area {
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  grid-area: output-area;
 
   &__copy-button {
     position: absolute;

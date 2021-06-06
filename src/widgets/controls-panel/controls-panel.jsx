@@ -16,6 +16,8 @@ function ControlsPanel() {
   return (
     <div className="controls-panel">
       <label htmlFor="text-transform-type-select">
+        <strong>Transform Type: </strong>
+
         <select
           id="text-transform-type-select"
           value={transformType}

@@ -6,11 +6,14 @@ import OutputArea from './widgets/output-area';
 
 function App() {
   return (
-    <div className="app">
+    <>
+      <div className="input-output">
+        <InputArea />
+        <OutputArea />
+      </div>
+
       <ControlsPanel />
-      <InputArea />
-      <OutputArea />
-    </div>
+    </>
   );
 }
 
