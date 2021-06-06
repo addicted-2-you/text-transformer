@@ -1,4 +1,4 @@
-import { transformTextType } from 'utils/text-type-transformers';
+import { transformTextType, zalgify } from 'utils/text-transformers';
 
 import { setOutputText } from './text.slice';
 
@@ -8,9 +8,13 @@ export function transformText({ getState }) {
 
     const {
       text: { input },
-      settings: { transformType },
+      settings: { transformType, zalgoModes, zalgoLevel },
     } = getState();
 
-    next(setOutputText({ output: transformTextType(input, transformType) }));
+    next(
+      setOutputText({
+        output: zalgify(transformTextType(input, transformType), zalgoModes, zalgoLevel),
+      }),
+    );
   };
 }

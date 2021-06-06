@@ -4,8 +4,21 @@ $fade-purple: #444cf750;
   padding: 1rem 1.2rem;
   width: 15vw;
   display: flex;
-  justify-content: start;
+  flex-direction: column;
   background-color: #efefef70;
   border-bottom: 1px solid $fade-purple;
   border-left: 1px solid #000000;
+
+  .controls-group {
+    padding: 0.25rem;
+    margin-top: 1.5rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+
+    .zalgo-modes-group {
+      label {
+        display: block;
+      }
+    }
+  }
 }

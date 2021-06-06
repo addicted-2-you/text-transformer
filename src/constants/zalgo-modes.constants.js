@@ -1,0 +1,3 @@
+export const ZALGO_MODE_TOP = 'ZALGO_MODE@TOP';
+export const ZALGO_MODE_MID = 'ZALGO_MODE@MID';
+export const ZALGO_MODE_DOWN = 'ZALGO_MODE@DOWN';
