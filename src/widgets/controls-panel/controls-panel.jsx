@@ -8,7 +8,11 @@ import {
   removeZalgoMode,
 } from 'store/settings.slice';
 
-import { TRANSFORM_TYPE_NONE, TRANSFORM_TYPE_IEROGLIFY } from 'constants/transform-types.constants';
+import {
+  TRANSFORM_TYPE_NONE,
+  TRANSFORM_TYPE_IEROGLIFY,
+  TRANSFORM_TYPE_WITCHIFY,
+} from 'constants/transform-types.constants';
 import { ZALGO_MODE_DOWN, ZALGO_MODE_MID, ZALGO_MODE_TOP } from 'constants/zalgo-modes.constants';
 
 function ControlsPanel() {
@@ -64,6 +68,7 @@ function ControlsPanel() {
         >
           <option value={TRANSFORM_TYPE_NONE}>None</option>
           <option value={TRANSFORM_TYPE_IEROGLIFY}>Ieroglify</option>
+          <option value={TRANSFORM_TYPE_WITCHIFY}>Witchify</option>
         </select>
       </label>
 

@@ -1,13 +1,18 @@
-import { TRANSFORM_TYPE_IEROGLIFY } from 'constants/transform-types.constants';
+import {
+  TRANSFORM_TYPE_IEROGLIFY,
+  TRANSFORM_TYPE_WITCHIFY,
+} from 'constants/transform-types.constants';
 import { ZALGO_MODE_DOWN, ZALGO_MODE_MID, ZALGO_MODE_TOP } from 'constants/zalgo-modes.constants';
 
 import ieroglifyDictionary from 'dictionaries/ieroglify.dictionary';
+import witchifyDictionary from 'dictionaries/witchify.dictionary';
 import { zalgoTop, zalgoMid, zalgoDown } from 'dictionaries/zalgo.dictionary';
 
 import { getRandomNumber } from './numbers.utils';
 import { getRandomZalgoChar } from './zalgo.utils';
 
 export function transformTextType(originalText, transformType) {
+  // TODO: take random char from dictionary, not first
   switch (transformType) {
     case TRANSFORM_TYPE_IEROGLIFY: {
       return originalText
@@ -15,6 +20,15 @@ export function transformTextType(originalText, transformType) {
         .map((char) => (ieroglifyDictionary[char] ? ieroglifyDictionary[char][0] : char))
         .join('');
     }
+
+    case TRANSFORM_TYPE_WITCHIFY: {
+      return originalText
+        .toLowerCase()
+        .split('')
+        .map((char) => (witchifyDictionary[char] ? witchifyDictionary[char][0] : char))
+        .join('');
+    }
+
     default: {
       return originalText;
     }

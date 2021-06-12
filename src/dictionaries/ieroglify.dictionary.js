@@ -1,3 +1,4 @@
+// TODO: use lower case only
 export default {
   // english
   // upper case
